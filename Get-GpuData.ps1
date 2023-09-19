@@ -1,4 +1,4 @@
-﻿if ($null -eq (get-module powerHTML))
+if ($null -eq (get-module powerHTML))
     {
     Install-Module -Name PowerHTML -RequiredVersion 0.1.6 -force
     }
@@ -59,11 +59,11 @@ foreach ($line in $valuestoParse)
             $output | Add-Member -MemberType NoteProperty -Name Manufacturer -Value $manufacturer -PassThru|
             Add-Member -MemberType NoteProperty -Name Product -Value $product -PassThru|
             Add-Member -MemberType NoteProperty -Name Generation -Value $gen -PassThru|
-            Add-Member -MemberType NoteProperty -Name $month5 -Value $valuestoParse[$linecount +1] -PassThru|
-            Add-Member -MemberType NoteProperty -Name $month4 -Value $valuestoParse[$linecount +2] -PassThru|
+            Add-Member -MemberType NoteProperty -Name $month1 -Value $valuestoParse[$linecount +1] -PassThru|
+            Add-Member -MemberType NoteProperty -Name $month2 -Value $valuestoParse[$linecount +2] -PassThru|
             Add-Member -MemberType NoteProperty -Name $month3 -Value $valuestoParse[$linecount +3] -PassThru|
-            Add-Member -MemberType NoteProperty -Name $month2  -Value $valuestoParse[$linecount +4] -PassThru|
-            Add-Member -MemberType NoteProperty -Name $month1 -Value $valuestoParse[$linecount +5] -PassThru|
+            Add-Member -MemberType NoteProperty -Name $month4  -Value $valuestoParse[$linecount +4] -PassThru|
+            Add-Member -MemberType NoteProperty -Name $month5 -Value $valuestoParse[$linecount +5] -PassThru|
             Add-Member -MemberType NoteProperty -Name Change -Value $valuestoParse[$linecount +6]
             $out +=$output
             }
@@ -116,11 +116,11 @@ foreach ($line in $valuestoParse)
             $output | Add-Member -MemberType NoteProperty -Name Manufacturer -Value $manufacturer -PassThru|
             Add-Member -MemberType NoteProperty -Name Product -Value $product -PassThru|
             Add-Member -MemberType NoteProperty -Name Generation -Value $gen -PassThru|
-            Add-Member -MemberType NoteProperty -Name $month5 -Value $valuestoParse[$linecount +1] -PassThru|
-            Add-Member -MemberType NoteProperty -Name $month4 -Value $valuestoParse[$linecount +2] -PassThru|
+            Add-Member -MemberType NoteProperty -Name $month1 -Value $valuestoParse[$linecount +1] -PassThru|
+            Add-Member -MemberType NoteProperty -Name $month2 -Value $valuestoParse[$linecount +2] -PassThru|
             Add-Member -MemberType NoteProperty -Name $month3 -Value $valuestoParse[$linecount +3] -PassThru|
-            Add-Member -MemberType NoteProperty -Name $month2  -Value $valuestoParse[$linecount +4] -PassThru|
-            Add-Member -MemberType NoteProperty -Name $month1 -Value $valuestoParse[$linecount +5] -PassThru|
+            Add-Member -MemberType NoteProperty -Name $month4  -Value $valuestoParse[$linecount +4] -PassThru|
+            Add-Member -MemberType NoteProperty -Name $month5 -Value $valuestoParse[$linecount +5] -PassThru|
             Add-Member -MemberType NoteProperty -Name Change -Value $valuestoParse[$linecount +6]
             $out +=$output
             }
@@ -142,11 +142,11 @@ foreach ($line in $valuestoParse)
             $output | Add-Member -MemberType NoteProperty -Name Manufacturer -Value $manufacturer -PassThru|
             Add-Member -MemberType NoteProperty -Name Product -Value $product -PassThru|
             Add-Member -MemberType NoteProperty -Name Generation -Value $gen -PassThru|
-            Add-Member -MemberType NoteProperty -Name $month5 -Value $valuestoParse[$linecount +1] -PassThru|
-            Add-Member -MemberType NoteProperty -Name $month4 -Value $valuestoParse[$linecount +2] -PassThru|
+            Add-Member -MemberType NoteProperty -Name $month1 -Value $valuestoParse[$linecount +1] -PassThru|
+            Add-Member -MemberType NoteProperty -Name $month2 -Value $valuestoParse[$linecount +2] -PassThru|
             Add-Member -MemberType NoteProperty -Name $month3 -Value $valuestoParse[$linecount +3] -PassThru|
-            Add-Member -MemberType NoteProperty -Name $month2  -Value $valuestoParse[$linecount +4] -PassThru|
-            Add-Member -MemberType NoteProperty -Name $month1 -Value $valuestoParse[$linecount +5] -PassThru|
+            Add-Member -MemberType NoteProperty -Name $month4  -Value $valuestoParse[$linecount +4] -PassThru|
+            Add-Member -MemberType NoteProperty -Name $month5 -Value $valuestoParse[$linecount +5] -PassThru|
             Add-Member -MemberType NoteProperty -Name Change -Value $valuestoParse[$linecount +6]
             $out +=$output
             }
