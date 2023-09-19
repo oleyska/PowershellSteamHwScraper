@@ -1,3 +1,9 @@
+Param(
+	[Parameter(Mandatory=$false)] [String]$exportpath,
+    [Parameter(Mandatory=$false)] [String]$delimiter
+	)
+
+
 if ($null -eq (get-module powerHTML))
     {
     Install-Module -Name PowerHTML -RequiredVersion 0.1.6 -force
@@ -152,4 +158,12 @@ foreach ($line in $valuestoParse)
             }
     $linecount++
     }
-Write-Output $out
+
+if ($null -eq $exportpath)
+    {
+    Write-Output $out
+    }
+if ($null -ne $exportpath)
+    {
+    export-csv $exportpath -Delimiter ';' -Encoding utf8 -NoTypeInformation
+    }
