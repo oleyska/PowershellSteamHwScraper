@@ -39,11 +39,11 @@ foreach ($line in $valuestoParse)
                 {
                 $gen = 'RDNA 2'
                 }
-            if ($product -like 'Radeon RX 5*' -and ((($product | Select-String -Pattern '\d+' -AllMatches).Matches.Value).Length) -eq 3)
+            if ($product -like 'Radeon RX 5*' -and ((($product | Select-String -Pattern '\d+' -AllMatches).Matches.Value).Length) -eq 4)
                 {
                 $gen = 'RDNA 1'
                 }
-            if (($product -like 'Radeon RX 4*' -or $product -like 'Radeon RX 5*') -and ((($product | Select-String -Pattern '\d+' -AllMatches).Matches.Value).Length) -gt 2)
+            if (($product -like 'Radeon RX 4*' -or $product -like 'Radeon RX 5*') -and ((($product | Select-String -Pattern '\d+' -AllMatches).Matches.Value).Length) -gt 2 -and ((($product | Select-String -Pattern '\d+' -AllMatches).Matches.Value).Length) -lt 4)
                 {
                 $gen = 'GCN 4.0'
                 }
