@@ -1,8 +1,7 @@
 Param(
 	[Parameter(Mandatory=$false)] [String]$exportpath,
-    [Parameter(Mandatory=$false)] [String]$delimiter
+    	[Parameter(Mandatory=$false)] [String]$delimiter ## not yet implemented.
 	)
-
 
 if ($null -eq (get-module powerHTML))
     {
@@ -165,5 +164,5 @@ if ($null -eq $exportpath)
     }
 if ($null -ne $exportpath)
     {
-    export-csv $exportpath -Delimiter ';' -Encoding utf8 -NoTypeInformation
+    $out | export-csv $exportpath -Delimiter ';' -Encoding utf8 -NoTypeInformation
     }
